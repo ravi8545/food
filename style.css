@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gill Sans", sans-serif;
+  }
+  
+  body {
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  .navbar {
+    display: flex;
+    background-color: #4CAF50; /* Fresh green color */
+    width: 100%;
+    height: 3.4rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #FFD700; /* Golden yellow for hover */
+    transform: scale(1.1);
+  }
+  
+  .list a {
+    margin-right: 2rem;
+  }
+  
+  .login a {
+    margin-left: 1rem;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-image: url(foody.jpg);
+    background-size: cover;
+  }
+  
+  .logo img {
+    width: 150px;
+    margin-bottom: 2rem;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .slogan {
+    text-align: center;
+    margin-bottom: 2rem;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .slogan h1 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 0.5rem;
+  }
+  
+  .slogan p {
+    font-size: 1.2rem;
+    color: white;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .items {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .items h2 {
+    margin-bottom: 1rem;
+    color: #4CAF50;
+  }
+  
+  .items label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .items input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .save-btn {
+    background: linear-gradient(45deg, #FFA500, #FFD700); /* Orange to yellow gradient */
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .save-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .items-container {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .item-box {
+    background-color: #eaf7e4; /* Light green background */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .item-box p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .delete-btn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-btn:hover {
+    background-color: #ff4c4c;
+  }
+  
+  footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  footer p {
+    margin: 0.5rem 0;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      height: auto;
+      padding: 1rem;
+    }
+  
+    .list, .login {
+      margin: 0.5rem 0;
+    }
+  
+    .logo img {
+      width: 100px;
+    }
+    .footer_logo img {
+      width: 390px;
+      margin: 0 auto;
+      padding: 0;
+    }
+    footer {
+      width: 390px;
+      padding: 0;
+      margin: 0;
+    }
+    main {
+      width: 100%;
+    }
+  
+    .items {
+      padding: 1rem;
+    }
+  
+    .items-container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+  

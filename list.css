@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Gill Sans", sans-serif;
+} 
+
+.main-section {
+    height: 90vh;
+    width: 100%;
+    background-color: #8C9491;
+    
+}
+.main-section h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.lists {
+    height: 9rem;
+    max-width: 75rem;
+    margin: 2rem 2rem 2rem 2rem;
+    background: white;
+    padding: 1rem 4rem 1rem 4rem ;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product{
+    width: 95%;
+    background: #fff;
+    padding: 0.5rem ;
+    margin: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.product p {
+    background: #f8f9fa;
+    padding: rem;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.expiry-date{
+    font-weight: bold;
+    padding: 3px 7px;
+    border-radius: 5px;
+}
+
+
+.expiry-date::before {
+    content: "🕒 ";
+}
+
+.btn-update {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 0.3rem; */
+    
+}
+
+.btn-update button {
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #8C8C;
+    border-radius: 1rem;
+    height: 2.4rem;
+    width: 5rem;
+}
+
+.btn-update button:hover {
+    background: linear-gradient(45deg, #ff6b5f, #fea05b);
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
